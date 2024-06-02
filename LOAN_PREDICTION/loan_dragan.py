@@ -1,4 +1,3 @@
-from pmlb import fetch_data
 import pandas as pd
 from ydata_synthetic.synthesizers.regular import RegularSynthesizer
 from ydata_synthetic.synthesizers import ModelParameters, TrainParameters
