@@ -1,1 +1,1 @@
-# ctgan_for_loan_prediction
+CTGAN FOR LOAN PREDICTION
