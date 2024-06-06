@@ -1,6 +1,7 @@
 import pandas as pd
-from ydata_synthetic.synthesizers.regular import RegularSynthesizer
-from ydata_synthetic.synthesizers import ModelParameters, TrainParameters
+
+from src.synth_data_src.synthesizers.base import ModelParameters, TrainParameters
+from src.synth_data_src.synthesizers.regular.model import RegularSynthesizer
 
 # Load data and define the data processor parameters
 file_path = "loan_input.csv"
@@ -11,8 +12,7 @@ num_cols = ['ID', 'Amount', 'Funded Amount', 'Funded Amount Investor', 'Term', '
             'Collection Recovery Fee', 'Last week Pay', 'Total Collection Amount', 'Balance', 'Defaulted']
 cat_cols = ['Grade', 'Sub Grade', 'HomeOwnership', 'Verification Status', 'Initial List Status']
 
-# DRAGAN training
-#Defining the training parameters of DRAGAN
+
 noise_dim = 128
 dim = 128
 batch_size = 500

@@ -1,6 +1,7 @@
 import pandas as pd
-from ydata_synthetic.synthesizers import ModelParameters, TrainParameters
-from ydata_synthetic.synthesizers.regular import RegularSynthesizer
+
+from src.synth_data_src.synthesizers.base import ModelParameters, TrainParameters
+from src.synth_data_src.synthesizers.regular.model import RegularSynthesizer
 
 # Load data and define the data processor parameters
 file_path = "loan_input.csv"
